@@ -1,0 +1,160 @@
+/* Body */
+body {
+  background-color: #f4f4f4;
+  font-family: "Times New Roman", serif;
+}
+h1,
+h2,
+h5 {
+  font-weight: bold;
+}
+/* Header Image Styles */
+.header-image {
+  position: relative;
+  overflow: hidden;
+  height: 60vh; /* Atur tinggi untuk tampilan HP */
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar menutupi area */
+}
+
+.header-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Warna teks */
+  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+  padding: 10px; /* Mengurangi padding untuk tampilan HP */
+  border-radius: 10px; /* Sudut melengkung */
+}
+
+.header-caption h1 {
+  font-size: 2rem; /* Ukuran font judul lebih kecil untuk tampilan HP */
+  font-family: "Times New Roman", serif;
+}
+
+.header-caption p {
+  font-size: 1rem; /* Ukuran font deskripsi lebih kecil untuk tampilan HP */
+  font-family: "Times New Roman", serif;
+}
+
+/* Navbar */
+.navbar {
+  padding: 10px 0; /* Padding navbar untuk tampilan HP */
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek shadow */
+}
+
+.navbar .nav-link {
+  color: black; /* Mengatur warna teks navbar */
+}
+
+.navbar-brand {
+  color: black; /* Mengatur warna teks brand */
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1); /* Mengatur warna border tombol toggler */
+}
+
+/* Menu */
+#menu h2 {
+  color: #006400;
+}
+.menu-card {
+  margin-bottom: 20px; /* Menambahkan margin bawah untuk jarak antar menu */
+}
+.menu-card img {
+  height: 200px; /* Ukuran gambar menu untuk tampilan HP */
+  object-fit: cover;
+}
+
+.menu-card .card-title,
+.menu-card .card-text,
+.menu-card .fw-bold {
+  font-family: "Times New Roman", serif;
+}
+#video-reels {
+  color: #006400;
+}
+#lokasi {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#lokasi h2 {
+  font-size: 2.5rem;
+  color: #006400;
+}
+
+#lokasi h4 {
+  font-size: 1.8rem;
+  color: #555;
+}
+
+#lokasi p {
+  font-size: 1.1rem;
+  color: #666;
+}
+footer {
+  background-color: rgba(44, 24, 16, 0.98);
+  padding: 20px 0;
+}
+
+footer h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer .social-icons a {
+  font-size: 1.5rem; /* Ukuran ikon sosial */
+  transition: color 0.3s;
+  text-decoration: none; /* Menghilangkan garis bawah pada ikon sosial */
+  color: white; /* Mengatur warna ikon sosial */
+}
+
+footer .social-icons a:hover {
+  color: #f4f4f4; /* Warna saat hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px; /* Ukuran font lebih kecil untuk tampilan sangat kecil */
+    line-height: 1.4; /* Mengatur line-height untuk kenyamanan baca */
+  }
+
+  .menu-card {
+    max-width: 100%; /* Memastikan menu-card tidak melebihi lebar layar */
+    margin: 0 auto 15px; /* Margin otomatis untuk pusat */
+  }
+
+  .menu-card .card-text {
+    min-height: auto; /* Menghapus batasan tinggi minimum */
+  }
+
+  #reels .card {
+    margin: 0 auto; /* Center the card */
+    max-width: 100%; /* Ensure the card does not exceed screen width */
+  }
+
+  #reels iframe {
+    height: 200px; /* Adjust height for mobile */
+  }
+}
